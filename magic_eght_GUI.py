@@ -25,6 +25,7 @@ while True:
         break
     if event == 'Спросить':
         if values['input']:
+            window['input'].Update('')
             window['img'].Update(random.choice(answers))
         if not values['input']:
             window['text'].Update('Вы ничего не спросили')
